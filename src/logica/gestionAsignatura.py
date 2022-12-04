@@ -17,6 +17,7 @@ class GestionAsignatura():
             return True
         else:
             return False
+        |
 
         def editar_asignatura(self, idAsignatura, nombreAsignatura):
             if len(nombreAsignatura) == 0:
