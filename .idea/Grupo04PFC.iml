@@ -2,11 +2,7 @@
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-<<<<<<< HEAD
     <orderEntry type="inheritedJdk" />
-=======
-    <orderEntry type="jdk" jdkName="Python 3.11 (venv)" jdkType="Python SDK" />
->>>>>>> 9f49d240cedf14e1917eea5cf7470b3f5a7f971a
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
