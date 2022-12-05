@@ -1,13 +1,13 @@
 from PyQt5 import uic, QtWidgets
 app = QtWidgets.QApplication([])
 
-principal = uic.loadUi("D:\construccion\proyectos\Grupo04PFC\src\ista\menu_principal.ui")
-agregar_Estudiante = uic.loadUi("D:\construccion\proyectos\Grupo04PFC\src\ista\hagregar_estudiante.ui")
-ver_notas = uic.loadUi("D:\construccion\proyectos\Grupo04PFC\src\ista\hver_notas.ui")
-editar_asignatura=uic.loadUi("D:\construccion\proyectos\Grupo04PFC\src\ista\editar_asignatura.ui")
-agregar_asignatura=uic.loadUi("D:\construccion\proyectos\Grupo04PFC\src\ista\hagregar_asignatura.ui")
-editar_estudiante=uic.loadUi("D:\construccion\proyectos\Grupo04PFC\src\ista\editar_estudiante.ui")
-agregar_nota=uic.loadUi("D:\construccion\proyectos\Grupo04PFC\src\ista\hagregar_nota.ui")
+principal = uic.loadUi("D:\PROYECTOSCDS\Proyectos\Grupo04PFC\src\ista\menu_principal.ui")
+agregar_Estudiante = uic.loadUi("D:\PROYECTOSCDS\Proyectos\Grupo04PFC\src\ista\hagregar_estudiante.ui")
+ver_notas = uic.loadUi("D:\PROYECTOSCDS\Proyectos\Grupo04PFC\src\ista\hver_notas.ui")
+editar_asignatura=uic.loadUi("D:\PROYECTOSCDS\Proyectos\Grupo04PFC\src\ista\editar_asignatura.ui")
+agregar_asignatura=uic.loadUi("D:\PROYECTOSCDS\Proyectos\Grupo04PFC\src\ista\hagregar_asignatura.ui")
+editar_estudiante=uic.loadUi("D:\PROYECTOSCDS\Proyectos\Grupo04PFC\src\ista\editar_estudiante.ui")
+agregar_nota=uic.loadUi("D:\PROYECTOSCDS\Proyectos\Grupo04PFC\src\ista\hagregar_nota.ui")
 def Entrar_asignatura():
     principal.hide()
     editar_asignatura.show()
