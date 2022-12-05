@@ -19,7 +19,7 @@
      <rect>
       <x>40</x>
       <y>60</y>
-      <width>101</width>
+      <width>111</width>
       <height>16</height>
      </rect>
     </property>
@@ -91,7 +91,7 @@
    <widget class="QLineEdit" name="lineEdit_2">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>170</x>
       <y>60</y>
       <width>221</width>
       <height>20</height>
@@ -134,7 +134,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Salir</string>
+     <string>volver</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -165,7 +165,7 @@
      <x>0</x>
      <y>0</y>
      <width>545</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
