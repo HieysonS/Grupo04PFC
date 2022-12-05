@@ -3,30 +3,31 @@ from src.modelo.declarative_base import engine, Base, session
 
 class GestionAsignatura():
 
-    def __init__(self):
+    def _init_(self):
         Base.metadata.create_all(engine)
 
-    def agregar_asignatura(self, nombreAsignatura, Creditos):
+    def agregar_asignatura(self, idAsignatura, nombreAsignatura, creditos):
         if len(nombreAsignatura)==0:
             return False
-        busqueda = session.query(Asignatura).filter(Asignatura.nombreAsignatura == nombreAsignatura).all()
+        busqueda = session.query(Asignatura).filter(Asignatura.idAsignatura == idAsignatura).all()
         if len(busqueda) == 0:
-            asignatura = Asignatura(nombreAsignatura=nombreAsignatura, credito = Creditos)
+            asignatura = Asignatura(idAsignatura = idAsignatura, nombreAsignatura=nombreAsignatura, credito = creditos)
             session.add(asignatura)
             session.commit()
             return True
         else:
             return False
-        |
 
-    def editar_asignatura(self, idAsignatura, nombreAsignatura, Creditos):
-        if len(nombreAsignatura) == 0:
+
+    def editar_asignatura(self, idAsignatura, nombreAsignatura,creditos):
+        if len(idAsignatura) == 0:
            return False
-        busqueda = session.query(Asignatura).filter(Asignatura.nombreAsignatura == nombreAsignatura).all()
+        busqueda = session.query(Asignatura).filter(Asignatura.idAsignatura == idAsignatura).all()
         if len(busqueda) == 0:
-            Asignatura = session.query(Asignatura).filter(Asignatura.idAsignatura == idAsignatura).first()
+            Asignatura = session.query(Asignatura).filter(Asignatura.nombreAsignatura == nombreAsignatura).first()
+            Asignatura.idAsignatura = idAsignatura
             Asignatura.nombreAsignatura = nombreAsignatura
-            Asignatura.creditos = Creditos
+            Asignatura.creditos = creditos
             session.commit()
             return True
         else:
