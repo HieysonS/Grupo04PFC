@@ -7,11 +7,11 @@ class GestionAsignatura():
         Base.metadata.create_all(engine)
 
     def agregar_asignatura(self, nombreAsignatura, Creditos):
-        if len(nombreAsignatura)==0:
+        if len(nombreAsignatura) == 0:
             return False
         busqueda = session.query(Asignatura).filter(Asignatura.nombreAsignatura == nombreAsignatura).all()
         if len(busqueda) == 0:
-            asignatura = Asignatura(nombreAsignatura=nombreAsignatura, credito = Creditos)
+            asignatura = Asignatura(nombreAsignatura = nombreAsignatura, credito = Creditos)
             session.add(asignatura)
             session.commit()
             return True
